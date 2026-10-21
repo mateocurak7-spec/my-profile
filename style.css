@@ -1,0 +1,110 @@
+/* ---------- Defaults on the body ---------- */
+body {
+  background-color: #f2f5fb;
+  color: #33415c;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0px;
+}
+
+/* ---------- Headers ---------- */
+h1, h2, h3 {
+  color: #1b2a4a;
+  font-family: "Playfair Display", Georgia, serif;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+  margin-top: 0px;
+}
+h1 { font-size: 34px; margin-bottom: 10px; }
+h2 { font-size: 24px; margin-bottom: 14px; }
+h3 { font-size: 20px; margin-bottom: 14px; }
+
+/* ---------- Links ---------- */
+a {
+  color: #2f6fed;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #1b2a4a;
+}
+
+/* ---------- Layout: container and white cards ---------- */
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+.card-white {
+  background: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.card-white:hover {
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.14);
+}
+
+/* ---------- Reusable classes (element-design naming) ---------- */
+.text-center {
+  text-align: center;
+}
+
+.img-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.btn-blue {
+  display: inline-block;
+  background-color: #2f6fed;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 18px;
+  transition: background-color 0.3s ease;
+}
+.btn-blue:hover {
+  background-color: #1b2a4a;
+  color: white;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+.list-inline > li {
+  display: inline;
+  padding: 0px 20px;
+}
+
+/* ---------- Page-specific tweaks ---------- */
+.tagline {
+  max-width: 520px;
+  margin: 0px auto;
+  font-size: 18px;
+}
+
+/* ---------- Responsive container (least to most specific) ---------- */
+@media (max-width: 960px) {
+  .container { width: 700px; }
+}
+@media (max-width: 720px) {
+  .container { width: 500px; }
+}
+@media (max-width: 540px) {
+  .container { width: 300px; }
+  h1 { font-size: 28px; }
+  .card-white { padding: 22px; }
+  .list-inline > li { display: block; padding: 6px 0px; }
+}
